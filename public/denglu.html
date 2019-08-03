@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="Cache-Control" content="max-age=3600">
+  <title>Document</title>
+<link rel="stylesheet" href="css/d_body.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/denglu.css">
+  <style>
+		#footer .d1{
+			margin:auto;
+		}
+		#footer{
+			margin-top:60px;
+		}
+		#cw{
+			color:red;
+		}
+  </style>
+ </head>
+ <body>
+
+	<header>
+	<iframe src="index.html" style="width:100%;"  frameborder="0"   scrolling="no"></iframe>
+
+	</header>
+	<!-- 登录 -->
+	<div id="top">
+		<div id="dl">
+			<div id="dl_top">
+				<h2 >普通登录方式</h2>
+			</div>
+			<ul type="none">
+				<li class="li1">
+					<a href="" style="padding-left:300px;">手机账号快捷登录</a>
+				</li>
+				<li>
+					<span class="s1"><input type="text" placeholder="手机号码" id="phone"></span>
+				</li>
+				<li>
+					<span class="s2"><input  placeholder="填写密码" id="upwd"></span>
+				</li>
+				<li class="li2">
+					<input type="radio">记住账号 <a href="" style="margin-left:272px">忘记密码?</a>
+				</li>
+				<span id="cw"></span>
+				<li>
+					<button id="dl_btn" onclick="loginGet()">登录</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<!-- 尾部 -->	
+	<footer id="footer">
+		<div class="d1">
+			<div class="yj" style="display: inline-block;">
+				<p>订购专线：<span>400 968 3133</span>（服务时间 08:00–20:00）</p>
+
+				<p>客服电话：0917-3434702（宝鸡） |    &nbsp;&nbsp;&nbsp;33cake@sina.com（邮箱） </p>    
+
+				<p>宝鸡市区：<span>提前5小时预订；（当日22点以后订单，于次日8点开始审核）</span> </p>
+
+				<p><span>当日蛋糕配送截止下单时间：18:30</span></p>
+
+				<p>Copyright© 33Cake蛋糕官网&nbsp; 2014-2019, 版权所有 陕ICP备16002957号 </p>
+
+				公司: 宝鸡北纬叁十叁食品有限公司 地址: 宝鸡市高新区天玺路天玺台东门口
+			</div>
+			<div class="yb">
+				<div id="fr">
+					<a href="">企业试吃</a>| 
+					<a href="">联系我们</a>| 
+					<a href="">订购帮助</a>| 
+					<a href="">企业合作</a>
+				</div>
+				<div id="lj">
+					<a href="">
+						<img id="xl" src="img_index/icon_weibo.png" alt="">
+					</a>
+					<a href="">
+							<img id="wx"src="img_index/icon_weixin.png" alt="">
+							<div><img id="wx-ewm"src="img_index/4.jpg" width="218" height="217" border="0" alt=""></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		function loginGet(){
+			var u_phone=phone.value;
+			var u_pwd=upwd.value;
+
+			var xhr=new XMLHttpRequest();
+			
+
+			xhr.onreadystatechange=function(){
+				if (xhr.readyState==4&&xhr.status==200){
+					var result=xhr.responseText;
+					if (result=="1"){
+						alert("登陆成功");
+						cw.innerHTML=""
+						location.href="http://127.0.0.1:8080/index.html";
+					}else{
+						cw.innerHTML="账号和密码错误"
+					}
+	
+				}
+			}
+
+
+			xhr.open("get","http://127.0.0.1:8080/user/login?phone="+u_phone+"&upwd="+u_pwd,true)
+
+			xhr.send();
+		}
+	</script>
+ </body>
+</html>

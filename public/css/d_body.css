@@ -1,0 +1,15 @@
+		body,h2,a{
+			font-size: 12px;
+			color: #604136;
+			line-height: 1.5;
+		}
+
+	   h2{		
+			   font: 400 24px/44px 'Microsoft Yahei';
+				margin:auto;
+	   }
+	   a{
+			color: #0563c3;
+			text-decoration: none;
+
+	   }

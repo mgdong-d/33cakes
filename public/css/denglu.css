@@ -1,0 +1,64 @@
+#dl{
+			width:960px;
+			height:316px;
+/* 			border:1px solid black; */
+			margin:auto;
+			color:#8D6A54;
+	   }
+	   #dl .s1{
+			display:block
+	   }
+	   h2{		
+			   font: 400 24px/44px 'Microsoft Yahei';
+				margin:auto;
+	   }
+	   a{
+			color: #0563c3;
+			text-decoration: none;
+
+	   }
+	   #dl_top{
+			/* border:1px solid red; */
+		    padding-left: 150px;
+			height: 60px;
+			background:url(../img_denglu/userbg.jpg) no-repeat 100px 4px;
+	   }
+	  /*  li{
+	   			border:1px solid yellow;
+	   } */
+	   #top{
+		/* 	border:1px solid red; */
+			margin:auto;
+			padding-left: 177px;
+			width:1200px;
+	   }
+	   .s1 input,.s2 input{
+	   		width: 376px;
+			border-radius: 3px;
+			padding: 16px 0 16px 20px;
+			border: solid 1px #eeeeee;
+			color: #8d6a54;
+			outline: none;
+	   }
+	/*    input 获取焦点 */
+	    .s1 input:focus,.s2 input:focus{
+			border:1px solid #8d6a54;
+		 }
+		 #dl_btn{
+			background: #491903;
+			width: 399px;
+			font-size: 18px;
+			line-height: 50px;
+			height: 52px;
+			text-align: center;
+			border: 0;
+			color: #fff;
+		 }
+		  .li1{
+			    height: 30px;
+				padding-top: 10px;
+		 }
+		  .li2{
+			    height: 30px;
+				padding-top: 10px;
+		 }

@@ -1,0 +1,24 @@
+#tj{
+	margin-top:20px;
+}
+.d1{
+	width: 1200px;
+    margin: auto;
+}
+#tj_cp li{
+	display:inline-block;
+	margin-left:16px;
+}
+#tj_cp #li1{
+	margin-left:0px;
+}
+#tj img{
+	width: 285px;
+    height: 285px;
+}
+.d1 .top{
+	 height: 50px;
+    line-height: 50px;
+    color: #8e6a55;
+    font-size: 16px;
+}

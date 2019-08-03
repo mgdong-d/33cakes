@@ -1,0 +1,82 @@
+header{
+		padding:0 20px;
+	}
+	#top a{
+		color:rgb(142, 106, 85);
+		text-decoration: none;
+	}
+	#top{
+		color:rgb(142, 106, 85);
+		height:30px;
+		border:1px solid rgb(234, 234, 234);
+		border-width:0 0 1px 0;
+	}
+	#top ul{
+		position: absolute;
+		right: 18%;
+		float:right;
+		margin-top: 8px;
+	}
+	#top ul li {
+		display:inline-block;
+	}
+	nav{
+		color:rgb(142, 106, 85);
+		border-bottom: 1px solid rgb(234, 234, 234);
+		font-size:16px;
+	}
+	nav ul{
+		    text-align: center;
+			margin-bottom: 10px;		
+	}
+	nav ul li{
+		display:inline-block;
+		border-bottom: 3px solid rgba(251, 255, 251, 0);
+		width:110px;
+		margin:auto;
+	}
+	nav ul li a{
+		width:100%;
+		display:inline-block;
+		border:1px solid rgb(234, 234, 234);
+		margin:11px 0;
+		border-width:0 1px 0 0;
+		color:rgb(142, 106, 85);
+		text-decoration: none;
+	}
+	nav li:hover{
+		border-bottom: 2px solid #BBBBBB;
+	}
+	nav li:hover a{
+		color:black;
+	}
+	nav .bz{
+		position: absolute;
+		top: -20px;	
+	}
+
+	.iw_nav {
+	    position: relative;
+		width: 1200px;
+		margin: auto;
+	}
+	.iw_nav .s1{
+		font-size: 16px;
+	}
+	.iw_nav .s2{
+		font-size: 14px;
+		padding: 5px 0 0 0;	
+	}
+	#phone{
+		margin-top: 10px;
+		width: 190px;
+		position: absolute;
+		right:0%;
+		color: #999;
+		font-size:16px;
+		line-height:25px;
+		font-size:16px;
+	}
+	#phone .s1{
+		font-size:12px;
+	}

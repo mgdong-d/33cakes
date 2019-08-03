@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  </style>
+ </head>
+ <body>
+	<div>
+		<input type="text" id="uname" ><br>
+		<input type="text" id="gender"><br>
+		<input type="text" id="age" ><br>
+		<button onclick="insert()">提交</button>
+	</div>
+		<table border="1px">
+			<thead>
+				<tr>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>年龄</th>
+				</tr>
+			</thead>
+			
+			<tbody id="tb"></tbody>	
+		</table>
+	
+	<script>
+	
+			function insert(){
+				var u_name=uname.value;
+				var u_gender=gender.value;
+				var u_age=age.value;
+				tb.innerHTML+="<tr><td>"+u_name+"</td><td>"+u_gender+"</td><td>"+u_age+"</td></tr>"
+			}
+		
+	</script>
+ </body>
+</html>

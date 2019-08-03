@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+			iframe{
+				width: 100%;
+
+			}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body,a{
+			    line-height: 1.5;
+			font-size: 12px;
+			color: #604136;
+			text-decoration: none;
+		}
+		#wb{
+			width: 1200px;
+			margin: auto;	
+/* 			border:1px solid black; */
+		}
+		#iw{
+			color: #8e6a55;
+		}
+		#fl ul li{
+			margin:0 20px  0;
+			padding: 0 5px;
+			display: inline-block;
+		}
+		#sy{
+			margin: 15px 0;
+		}
+		#fl li:hover a{
+			color:black;
+		}
+		.qc{
+			clear:both;
+		}
+		#dx{
+/* 			border:1px solid black;	 */
+			margin-top: 15px;
+		}
+		#dx li{
+/* 			border:1px solid black; */
+			height: 200px;
+			list-style-type: none;	
+			margin-top: 20px;
+		}
+		#dx .img1{
+			float: left;
+			width: 200px;
+			height: 200px;
+		}
+		.xq{
+			margin:49px 0;
+			float:right;
+		}
+		.xq a{
+			display: block;	
+			border:1px solid #fff;
+			width:170px;
+			height: 50px;
+			line-height: 50px;
+			padding: 0 0 0 20px;
+			
+		}
+		.d1:after{
+			content:"";
+			display:block;
+			clear:both;
+		}	
+		.d1{
+			box-sizing:border-box;	
+			height: 200px;
+			background: #FCF2EB;
+			float:right;
+		}
+		.jje{	
+			width: 771px;
+			/* border:1px solid black; */
+			display: inline-block;
+			color:rgb(142, 106, 85);
+			padding:40px 0 0 30px;
+		}
+		.jje h3 a{
+				font-weight: 400;
+				font-size:16px;
+				color:rgb(142, 106, 85);
+		}
+		.jje p{
+				margin-top: 10px;
+		}
+		.jje_z{
+			float:left;
+		}
+		.jje_y{
+				float:right;
+				width: 180px;
+				margin-top:38px;
+		}
+		.jje_y a{
+				display: block;
+				height: 40px;
+				line-height: 40px;	
+				color:rgb(142, 106, 85);
+		}
+		/*悬浮弹出*/
+		.ps{
+			 width:270px;
+			 font-size: 12px;
+			 background: white;
+			 border:2px solid rgb(102, 102, 102);
+			 padding-left:10px;
+			 display:none;
+			 position: relative;		
+		}
+		.ps>div>p{
+			 margin-top:0 ;
+			 height: 25px;
+			 line-height: 25px;
+			 color: #b59e90;
+		}
+		.ps .title{
+			font-weight: 400;
+			font-size: 14px;
+			color: rgb(142, 106, 85);
+			height: 25px;
+		}
+		.ps .p1{
+			font-size:14px;	
+		}
+		.ps .p1 span{
+			color:red;
+			font-size:16px;
+		}
+		.jje_y .a1:hover~.ps{
+			display:block;
+		}
+		#fenye li{
+			display:inline-block;
+			border:1px solid rgb(221, 221, 221);
+			height: 33px;
+			text-align: center;
+			line-height: 33px;
+			padding:0 2px;
+			color:#491903;
+		}
+		#fenye{
+			width: 318px;
+			margin:30px auto 0;
+		}
+		.fy{
+			width: 66px;
+		}
+		.ys{
+			width: 33px;
+		}
+		#fenye li:hover{
+				background: rgb(73, 25, 3);
+		}
+		#fenye li:hover a{
+			color:rgb(255, 255, 255);
+		
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<header>
+    <iframe class="my_header" src="header.html" frameborder="0" scrolling="no"></iframe>
+	</header>
+	<div id="wb">
+		<div id="iw">
+			<div id="sy">
+				<span><a href="">首页</a></span><span>&nbsp;&gt;&nbsp;</span>
+				<span><a href="">蛋糕</a></span><span>&nbsp;&nbsp;&gt;</span>
+			</div>
+			<div id="fl"> 
+				<ul type="none">
+					<li>蛋糕分类</li>
+					<li><a href="">不限</a></li>
+					<li><a href="">乳脂奶油蛋糕</a></li>
+					<li><a href="">慕斯蛋糕</a></li>
+					<li><a href="">罐子蛋糕</a></li>
+					<li><a href="">蛋糕配件</a></li>
+					</ul>
+			</div>
+			<div class="qc"></div>
+		</div>
+		<div id="dx">
+			<ul >
+				<li>
+					<img class="img1" src="img_cake/1.jpg" alt="">
+					<!--蛋糕简介-->
+					<div class="jje">
+						<div class="jje_z">
+						
+							<h3><a href="">	Love Rites 爱的仪式</a></h3>
+							<div>
+								
+								<p>回家，与母亲一起，共享母亲节的美好时光 <br>	
+									Come home and share Mother's Day with your mother</p>
+								<br>
+						</div>
+						</div>
+						<div class="jje_y">
+								<p>
+									¥199/1.1磅
+								</p>	
+								<a class="a1" href="#">
+									查看配送时间
+								</a>
+							<!-- 	悬浮弹出 -->
+								<div class="ps">
+									<div>
+										<h2 class="title">Sweet milk Mango 香奶芒果</h2>
+									</div>
+									<div>
+										<p class="p1">现在订购最早&nbsp;<span>明天 11:00</span>&nbsp;配送</p>
+										<p>每日最晚配送时间20:00</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="d1">
+						<div class="xq">
+							<a class="" href=""><img src="img_cake/jt.png"  alt="">查询详情</a>
+							<a href=""><img src="img_cake/jh.png"  alt="">加入购物车</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img class="img1" src="img_cake/2.jpg"  alt="">
+						<!--蛋糕简介-->
+					<div class="jje">
+						<div class="jje_z">
+						
+							<h3><a href="">	Love Rites 爱的仪式</a></h3>
+							<div>
+								
+								<p>回家，与母亲一起，共享母亲节的美好时光 <br>	
+									Come home and share Mother's Day with your mother</p>
+								<br>
+						</div>
+						</div>
+						<div class="jje_y">
+								<p>
+									¥199/1.1磅
+								</p>	
+								<a class="a1" href="#">
+									查看配送时间
+								</a>
+								<!-- 	悬浮弹出 -->
+								<div class="ps">
+									<div>
+										<h2 class="title">Sweet milk Mango 香奶芒果</h2>
+									</div>
+									<div>
+										<p class="p1">现在订购最早&nbsp;<span>明天 11:00</span>&nbsp;配送</p>
+										<p>每日最晚配送时间20:00</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="d1">
+						<div class="xq">
+							<a class="" href="">
+								<img src="img_cake/jt.png"  alt="">查询详情
+							</a>
+							<a href="">
+								<img src="img_cake/jh.png"  alt="">加入购物车
+							</a>
+						
+						</div>
+					</div>
+
+				</li>
+				<li>
+					<img class="img1" src="img_cake/3.jpg"  alt="">
+						<!--蛋糕简介-->
+					<div class="jje">
+						<div class="jje_z">
+						
+							<h3><a href="">	Love Rites 爱的仪式</a></h3>
+							<div>
+								
+								<p>回家，与母亲一起，共享母亲节的美好时光 <br>	
+									Come home and share Mother's Day with your mother</p>
+								<br>
+						</div>
+						</div>
+						<div class="jje_y">
+								<p>
+									¥199/1.1磅
+								</p>	
+								<a class="a1" href="#">
+									查看配送时间
+								</a>
+					<!-- 	悬浮弹出 -->
+								<div class="ps">
+									<div>
+										<h2 class="title">Sweet milk Mango 香奶芒果</h2>
+									</div>
+									<div>
+										<p class="p1">现在订购最早&nbsp;<span>明天 11:00</span>&nbsp;配送</p>
+										<p>每日最晚配送时间20:00</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="d1">
+						<div class="xq">
+							<a class="" href=""><img src="img_cake/jt.png"  alt="">查询详情</a>
+							<a href=""><img src="img_cake/jh.png"  alt="">加入购物车</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img class="img1" src="img_cake/4.jpg"  alt="">
+						<!--蛋糕简介-->
+					<div class="jje">
+						<div class="jje_z">
+						
+							<h3><a href="">	Love Rites 爱的仪式</a></h3>
+							<div>
+								
+								<p>回家，与母亲一起，共享母亲节的美好时光 <br>	
+									Come home and share Mother's Day with your mother</p>
+								<br>
+						</div>
+						</div>
+						<div class="jje_y">
+								<p>6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+									¥199/1.1磅
+								</p>	
+								<a class="a1" href="#">
+									查看配送时间
+								</a>
+					<!-- 	悬浮弹出 -->
+								<div class="ps">
+									<div>
+										<h2 class="title">Sweet milk Mango 香奶芒果</h2>
+									</div>
+									<div>
+										<p class="p1">现在订购最早&nbsp;<span>明天 11:00</span>&nbsp;配送</p> 
+										<p>每日最晚配送时间20:00</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="d1">
+						<div class="xq">
+							<a class="" href=""><img src="img_cake/jt.png"  alt="">查询详情</a>
+							<a href=""><img src="img_cake/jh.png"  alt="">加入购物车</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img class="img1" src="img_cake/5.jpg"  alt="">
+						<!--蛋糕简介-->
+					<div class="jje">
+						<div class="jje_z">
+						
+							<h3><a href="">	Love Rites 爱的仪式</a></h3>
+							<div>
+								
+								<p>回家，与母亲一起，共享母亲节的美好时光 <br>	
+									Come home and share Mother's Day with your mother</p>
+								<br>
+						</div>
+						</div>
+						<div class="jje_y">
+								<p>
+									¥199/1.1磅
+								</p>	
+								<a class="a1" href="#">
+									查看配送时间
+								</a>
+					<!-- 	悬浮弹出 -->
+								<div class="ps">
+									<div>
+										<h2 class="title">Sweet milk Mango 香奶芒果</h2>
+									</div>
+									<div>
+										<p class="p1">现在订购最早&nbsp;<span>明天 11:00</span>&nbsp;配送</p>
+										<p>每日最晚配送时间20:00</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="d1">
+						<div class="xq">
+							<a class="" href=""><img src="img_cake/jt.png"  alt="">查询详情</a>
+							<a href=""><img src="img_cake/jh.png"  alt="">加入购物车</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img class="img1" src="img_cake/6.jpg"  alt="">
+						<!--蛋糕简介-->
+					<div class="jje">
+						<div class="jje_z">
+						
+							<h3><a href="">	Love Rites 爱的仪式</a></h3>
+							<div>
+								
+								<p>回家，与母亲一起，共享母亲节的美好时光 <br>	
+									Come home and share Mother's Day with your mother</p>
+								<br>
+						</div>
+						</div>
+						<div class="jje_y">
+								<p>
+									¥199/1.1磅
+								</p>	
+								<a class="a1" href="#">
+									查看配送时间
+								</a>
+					<!-- 	悬浮弹出 -->
+								<div class="ps">
+									<div>
+										<h2 class="title">Sweet milk Mango 香奶芒果</h2>
+									</div>
+									<div>
+										<p class="p1">现在订购最早&nbsp;<span>明天 11:00</span>&nbsp;配送</p>
+										<p>每日最晚配送时间20:00</p>
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="d1">
+						<div class="xq">
+							<a class="" href="">
+								<img src="img_cake/jt.png"  alt="">查询详情
+							</a>
+							<a href="">
+								<img src="img_cake/jh.png"  alt="">加入购物车
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>	
+		</div>
+		<ul id="fenye" type="none">
+				<li class="fy"><a href="">上一页</a></li>
+				<li class="ys"><a href="">1</a></li>
+				<li class="ys"><a href="">2</a></li>
+				<li class="ys"><a href="">3</a></li>
+				<li class="ys"><a href="">4</a></li>
+				<li class="fy"><a href="">下一页</a></li>
+			</ul>
+	</div>
+	<iframe class="my_footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+
+</body>
+</html>
